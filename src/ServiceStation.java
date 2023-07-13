@@ -25,4 +25,11 @@ public class ServiceStation implements ServiceStationInterface {
             truck.updateTyre();
         }
     }
+
+    private void printCheck(TransportVehicle transportVehicle) {
+        System.out.println("Обслуживаем " + transportVehicle.getModelName());
+        for (int i = 0; i < transportVehicle.getWheelsCount(); i++) {
+            transportVehicle.updateTyre();
+        }
+    }
 }

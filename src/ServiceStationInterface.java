@@ -1,7 +1,3 @@
-public interface ServiceStationInterface {
-    void check(Car car);
+public interface ServiceStationInterface extends ServiceStationInterfaceSecond {
 
-    void check(Bicycle bicycle);
-
-    void check(Truck truck);
 }
