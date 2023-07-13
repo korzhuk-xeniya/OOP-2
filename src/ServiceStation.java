@@ -30,6 +30,7 @@ public class ServiceStation implements ServiceStationInterface {
         System.out.println("Обслуживаем " + transportVehicle.getModelName());
         for (int i = 0; i < transportVehicle.getWheelsCount(); i++) {
             transportVehicle.updateTyre();
+
         }
     }
 }
