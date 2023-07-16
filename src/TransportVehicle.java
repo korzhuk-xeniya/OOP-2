@@ -15,14 +15,13 @@ public abstract class TransportVehicle {
         for (int i = 0; i < this.wheelsCount; i++) {
             this.updateTyre();
         }
-
     }
 
-        public String getModelName() {
-            return modelName;
-        }
-
-        public int getWheelsCount() {
-            return wheelsCount;
-        }
+    public String getModelName() {
+        return modelName;
     }
+
+    public int getWheelsCount() {
+        return wheelsCount;
+    }
+}
