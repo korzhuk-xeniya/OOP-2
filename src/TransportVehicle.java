@@ -11,19 +11,18 @@ public abstract class TransportVehicle {
         System.out.println("Меняем покрышку");
     }
 
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+    public void service() {
+        for (int i = 0; i < this.wheelsCount; i++) {
+            this.updateTyre();
+        }
+
     }
 
-    public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
-    }
+        public String getModelName() {
+            return modelName;
+        }
 
-    public String getModelName() {
-        return modelName;
+        public int getWheelsCount() {
+            return wheelsCount;
+        }
     }
-
-    public int getWheelsCount() {
-        return wheelsCount;
-    }
-}
